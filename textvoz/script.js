@@ -12,7 +12,7 @@ function speakText() {
         isPaused = false;
         updatePauseResumeButton();
     } else {
-        // Caso contrário, crie um novo utterance e comece a fala
+        // Caso contrário, cria um novo utterance e começa a fala
         utterance = new SpeechSynthesisUtterance(textInput);
         utterance.lang = languageSelect;
         synth.speak(utterance);
